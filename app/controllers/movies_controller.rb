@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MoviesController < ApplicationController
   def index
     @user = User.find(params[:user_id])
@@ -7,7 +9,7 @@ class MoviesController < ApplicationController
       @query = params[:search]
       @search = MovieFacade.search(@query)
     end
-    render "movies/index"
+    render 'movies/index'
   end
 
   def show

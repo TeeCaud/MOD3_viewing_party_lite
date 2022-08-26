@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'MovieService' do
@@ -24,12 +26,10 @@ RSpec.describe 'MovieService' do
     expect(movie[:title]).to be_a String
   end
 
-
   it 'can search for an individual movie', :vcr do
-    pj = MovieService.movie_data(49022)
+    pj = MovieService.movie_data(49_022)
 
     expect(pj).to be_a Hash
-    expect(pj[:id]).to eq(49022)
-
+    expect(pj[:id]).to eq(49_022)
   end
 end

@@ -83,13 +83,12 @@ RSpec.configure do |config|
   # config.include RequestSpecHelper, type: :request
 end
 
-
 VCR.configure do |config|
-  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
   config.configure_rspec_metadata!
   config.default_cassette_options = { re_record_interval: 15.seconds }
-  config.filter_sensitive_data("movie_api_key") { ENV['api_key'] }
+  config.filter_sensitive_data('movie_api_key') { ENV['api_key'] }
 end
 
 Shoulda::Matchers.configure do |config|

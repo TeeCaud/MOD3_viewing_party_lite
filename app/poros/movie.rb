@@ -24,10 +24,10 @@ class Movie
   end
 
   def genre_name
-    genre = @genres.flat_map {|g| g[:name]}
+    genre = @genres.flat_map { |g| g[:name] }
   end
 
   def cast_name
-    cast = @cast.map {|c| c[:name]}
+    cast = @cast.map { |c| c[:name] }
   end
 end

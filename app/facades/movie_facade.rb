@@ -1,8 +1,9 @@
-class MovieFacade
+# frozen_string_literal: true
 
+class MovieFacade
   def self.movie_details(movie_id)
-  parsed_json = MovieService.movie_data(movie_id)
-  Movie.new(parsed_json)
+    parsed_json = MovieService.movie_data(movie_id)
+    Movie.new(parsed_json)
   end
 
   def self.top_20_rated
@@ -22,6 +23,5 @@ class MovieFacade
   def self.cast(movie_id)
     data = MovieService.credits(movie_id)
     Movie.new(data)
-    # binding.pry
   end
 end

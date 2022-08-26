@@ -32,14 +32,14 @@ RSpec.describe 'User Dashboard' do
 
     it 'can have view parties for a user' do
       user1 = User.create!(name: 'Jim Bob', email: 'jimb@viewingparty.com')
-      event = Event.create!(duration: 112, day: Date.today, start_time: "7:00PM", movie_title: "Something Borrowed" )
+      event = Event.create!(duration: 112, day: Date.today, start_time: '7:00PM', movie_title: 'Something Borrowed')
       user_event = UserEvent.create!(user_id: user1.id, event_id: event.id)
 
       visit user_path(user1.id)
 
-      expect(page).to have_content("Something Borrowed")
-      expect(page).to have_content("7:00PM")
-      expect(page).to have_content("2022-08-26 00:00:00 UTC")
+      expect(page).to have_content('Something Borrowed')
+      expect(page).to have_content('7:00PM')
+      expect(page).to have_content('2022-08-26 00:00:00 UTC')
     end
   end
 end

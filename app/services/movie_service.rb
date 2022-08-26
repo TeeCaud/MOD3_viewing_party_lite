@@ -1,16 +1,17 @@
-class MovieService
+# frozen_string_literal: true
 
+class MovieService
   def self.top_rated
     response = conn.get('/3/movie/top_rated')
     JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.movie_data(movie_id)
-  json = JSON.parse(conn.get("/3/movie/#{movie_id}").body, symbolize_names: true)
+    json = JSON.parse(conn.get("/3/movie/#{movie_id}").body, symbolize_names: true)
   end
 
   def self.search(query)
-    pages = [1,2]
+    pages = [1, 2]
     response = pages.map do |page|
       conn.get("/3/search/movie?page=#{page}&query={#{query}}")
     end
@@ -26,7 +27,6 @@ class MovieService
     json = JSON.parse(conn.get("/3/movie/#{movie_id}/credits").body, symbolize_names: true)
   end
 
-  private
   def self.conn
     Faraday.new(url: 'https://api.themoviedb.org') do |f|
       f.params['api_key'] = ENV['api_key']

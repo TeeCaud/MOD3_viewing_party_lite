@@ -24,6 +24,8 @@ http_interactions:
       - chunked
       Connection:
       - keep-alive
+      Date:
+      - Fri, 26 Aug 2022 15:21:44 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -33,18 +35,16 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
       X-Memc:
       - HIT
       X-Memc-Key:
       - bf96989718684a7676c538b164bdeeb310082ded
       X-Memc-Age:
-      - '278'
+      - '789'
       X-Memc-Expires:
-      - '15588'
-      Date:
-      - Fri, 26 Aug 2022 13:51:16 GMT
-      Cache-Control:
-      - public, max-age=28800
+      - '17081'
       Etag:
       - W/"0d7ba665d6e8dd0ac1a2f42bc0872b45"
       Vary:
@@ -52,15 +52,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 2c861897aa9389c1f47299b6fea5b59c.cloudfront.net (CloudFront)
+      - 1.1 66ba388c3807ced8474a06fdfcdde4fa.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - ORD52-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - dwQGs0HCJkB0V4SXwBXK6nK7zYxqmh_OpJst204s1QeELccdPy2lyw==
+      - HsGPVUz677SewiHcQFqZSxPwePDu7TqAU-UeIEcWhshv-S22sPllqg==
       Age:
-      - '21692'
+      - '17410'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/oD9PdTC1AUvsE2j2bUn8tusDVcO.jpg","belongs_to_collection":null,"budget":35000000,"genres":[{"id":35,"name":"Comedy"},{"id":18,"name":"Drama"},{"id":10749,"name":"Romance"}],"homepage":"http://somethingborrowedmovie.warnerbros.com/","id":49022,"imdb_id":"tt0491152","original_language":"en","original_title":"Something
@@ -75,7 +75,7 @@ http_interactions:
         Films","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2011-05-05","revenue":65090821,"runtime":112,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"It''s
         a thin line between love and friendship.","title":"Something Borrowed","video":false,"vote_average":6.3,"vote_count":900}'
-  recorded_at: Fri, 26 Aug 2022 19:52:48 GMT
+  recorded_at: Fri, 26 Aug 2022 20:11:54 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/49022?api_key=movie_api_key
@@ -100,6 +100,8 @@ http_interactions:
       - chunked
       Connection:
       - keep-alive
+      Date:
+      - Fri, 26 Aug 2022 15:21:44 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -109,18 +111,16 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
       X-Memc:
       - HIT
       X-Memc-Key:
       - bf96989718684a7676c538b164bdeeb310082ded
       X-Memc-Age:
-      - '278'
+      - '789'
       X-Memc-Expires:
-      - '15588'
-      Date:
-      - Fri, 26 Aug 2022 13:51:16 GMT
-      Cache-Control:
-      - public, max-age=28800
+      - '17081'
       Etag:
       - W/"0d7ba665d6e8dd0ac1a2f42bc0872b45"
       Vary:
@@ -128,15 +128,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 23d87d8c2ce38e34462e6c134d187eea.cloudfront.net (CloudFront)
+      - 1.1 249aa6f890bf73000af910ed0724d954.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - ORD52-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - CdHoWtRyiBvdam14_TqojUo6KQaN55DW9JISNZExRjejqvFoDFk7HQ==
+      - 5mxfWDKijhphb651t_vgHKdW5jkx8k42QVCsgvq7B-gflBEEtE2cfw==
       Age:
-      - '21692'
+      - '17410'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/oD9PdTC1AUvsE2j2bUn8tusDVcO.jpg","belongs_to_collection":null,"budget":35000000,"genres":[{"id":35,"name":"Comedy"},{"id":18,"name":"Drama"},{"id":10749,"name":"Romance"}],"homepage":"http://somethingborrowedmovie.warnerbros.com/","id":49022,"imdb_id":"tt0491152","original_language":"en","original_title":"Something
@@ -151,7 +151,7 @@ http_interactions:
         Films","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2011-05-05","revenue":65090821,"runtime":112,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"It''s
         a thin line between love and friendship.","title":"Something Borrowed","video":false,"vote_average":6.3,"vote_count":900}'
-  recorded_at: Fri, 26 Aug 2022 19:52:48 GMT
+  recorded_at: Fri, 26 Aug 2022 20:11:54 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/49022/credits?api_key=movie_api_key
@@ -177,7 +177,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 26 Aug 2022 19:52:47 GMT
+      - Fri, 26 Aug 2022 17:48:50 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -194,9 +194,9 @@ http_interactions:
       X-Memc-Key:
       - 9ab88d49132139ec6596fc532798936f305b055d
       X-Memc-Age:
-      - '9976'
+      - '2539'
       X-Memc-Expires:
-      - '7846'
+      - '15283'
       Etag:
       - W/"6579c98f7cf52858f6adb0c0e197e2be"
       Vary:
@@ -204,15 +204,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 29f1da35ce271d2cdc88184ed0c1f86c.cloudfront.net (CloudFront)
+      - 1.1 a1df977c0f19257540a25f348f676d48.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - ORD52-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - aEc6h0be94Iay8U1GpT-r3k2hYZ5KZTZul9MlibDiy7Uo264ApZeqA==
+      - eQLtXruX91UhNKS7q7kaeUlHyZ3CicXDp9o0y2Rm5I3kCHso9IRCgg==
       Age:
-      - '1'
+      - '8584'
     body:
       encoding: ASCII-8BIT
       string: '{"id":49022,"cast":[{"adult":false,"gender":1,"id":417,"known_for_department":"Acting","name":"Ginnifer
@@ -308,5 +308,5 @@ http_interactions:
         Lubin","original_name":"Aaron Lubin","popularity":0.6,"profile_path":null,"credit_id":"6090ce484813820056edfeb5","department":"Production","job":"Producer"},{"adult":false,"gender":0,"id":1720136,"known_for_department":"Production","name":"Pamela
         Schein Murphy","original_name":"Pamela Schein Murphy","popularity":0.6,"profile_path":null,"credit_id":"6090ce50a14e10003f95346d","department":"Production","job":"Producer"},{"adult":false,"gender":1,"id":3078466,"known_for_department":"Writing","name":"Emily
         Giffin","original_name":"Emily Giffin","popularity":0.6,"profile_path":"/1v8GT7WISs8GEtISkclK3SRDVkC.jpg","credit_id":"6090cfbaf29d660057be2735","department":"Writing","job":"Novel"}]}'
-  recorded_at: Fri, 26 Aug 2022 19:52:48 GMT
+  recorded_at: Fri, 26 Aug 2022 20:11:54 GMT
 recorded_with: VCR 6.1.0
