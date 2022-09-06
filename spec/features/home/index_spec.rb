@@ -40,10 +40,42 @@ RSpec.describe 'home page' do
 
     email = 'jimb@viewingparty.com'
     password = 'test'
+
+    fill_in "Email", with: email
+    fill_in "Password", with: password
     click_on 'Submit'
 
     expect(current_path).to eq("/users/#{@user1.id}")
+    expect(page).to have_content("Welcome back, #{@user1.name}!")
+  end
 
+  it 'sad path email for login' do
+    expect(page).to have_link('Log in')
+    click_link 'Log in'
+    expect(current_path).to eq('/login')
+    email = 'jimb@viewingparty.com'
+    password = 'test'
 
+    fill_in "Email", with: "asdf"
+    fill_in "Password", with: password
+    click_on 'Submit'
+
+    expect(current_path).to eq("/login")
+    expect(page).to have_content("Username or password are not correct.")
+  end
+
+  it 'sad path email for login' do
+    expect(page).to have_link('Log in')
+    click_link 'Log in'
+    expect(current_path).to eq('/login')
+    email = 'jimb@viewingparty.com'
+    password = 'test'
+
+    fill_in "Email", with: email
+    fill_in "Password", with: "not password"
+    click_on 'Submit'
+
+    expect(current_path).to eq("/login")
+    expect(page).to have_content("Username or password are not correct.")
   end
 end

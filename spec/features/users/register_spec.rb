@@ -20,4 +20,36 @@ RSpec.describe 'register page' do
 
     expect(current_path).to eq("/users/#{User.last.id}")
   end
+
+  it 'sad path for non matching passwords' do
+    visit '/register'
+
+    name = "Tee"
+    email = "tee@test.com"
+    password = "test"
+
+    fill_in :name, with: name
+    fill_in :email, with: email
+    fill_in :password, with: password
+    fill_in :password_confirmation, with: 'sdf'
+    click_on "Submit"
+
+    expect(page).to have_content("Password confirmation doesn't match Password")
+  end
+
+  it 'sad path for existing email' do
+    visit '/register'
+
+    name = "Tee"
+    email = "jimb@viewingparty.com"
+    password = "test"
+
+    fill_in :name, with: name
+    fill_in :email, with: email
+    fill_in :password, with: password
+    fill_in :password_confirmation, with: 'sdf'
+    click_on "Submit"
+
+    expect(page).to have_content("Email has already been taken")
+  end
 end
