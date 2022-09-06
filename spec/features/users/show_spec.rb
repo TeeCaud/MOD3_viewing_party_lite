@@ -4,8 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'users show page' do
   before :each do
-    @user1 = User.create!(name: 'Jim Bob', email: 'jimb@viewingparty.com')
-    @user2 = User.create!(name: 'Cary Berry', email: 'caryb@viewingparty.com')
+    @user1 = User.create!(name: 'Jim Bob', email: 'jimb@viewingparty.com', password: 'test', password_confirmation: 'test')
   end
 
   it 'has displays the users dashboard' do

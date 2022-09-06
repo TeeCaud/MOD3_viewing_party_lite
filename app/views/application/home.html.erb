@@ -7,4 +7,6 @@
   <div id="user-<%="#{user.id}"%>">
   <%= link_to "#{user.email}", user_path(user.id) %>
   </div>
-<% end %>
+  <% end %>
+  
+<%= link_to 'Log in', '/login', method: :get %>
