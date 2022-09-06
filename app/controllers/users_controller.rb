@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome, #{new_user.name}"
     else
       redirect_to '/register'
-      flash[:error] = user.errors.full_messages
+      flash[:error] = user.errors.full_messages 
     end
   end
 
