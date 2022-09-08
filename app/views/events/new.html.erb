@@ -1,6 +1,6 @@
 <h3>Create Event For <%= @movie.title %></h3>
 
-<%= form_with url: user_path(@user.id) , method: :post, local: true do |f| %>
+<%= form_with url: events_path , method: :post, local: true do |f| %>
     <p><%= f.label :title, "Movie Title" %> - <%= "#{@movie.title}" %></p>
     <p><%= f.label :runtime, "Duration" %></p>
     <p><%= f.number_field :runtime, value: "#{@movie.runtime}", min: "#{@movie.runtime}" %></p>

@@ -1,9 +1,7 @@
 <%= "#{@movie.title}" %>
-<p><%= link_to "New Viewing Party For #{@movie.title}", "/users/#{@user.id}/movies/#{@movie.id}/event/new" %></p>
+<p><%= link_to "New Viewing Party For #{@movie.title}", new_event_path(@movie.id), method: :get %></p>
 
-<%= button_to "Discover Movies",  "/users/#{@user.id}/discover", method: :get, local: true %>
-
-<%= button_to "Create a Viewing Party" %>
+<%= button_to "Discover Movies", '/discover', method: :get, local: true %>
 
 <p>Title: <%= "#{@movie.title}" %></p>
 <p>Vote Average: <%= "#{@movie.vote_average}" %></p>

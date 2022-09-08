@@ -1,6 +1,6 @@
 <h3><%= "#{@user.name}'s Dashboard" %></h3>
 
-<%= button_to "Discover Movies", user_discover_path(@user.id), method: :get, local: true %>
+<%= button_to "Discover Movies", '/discover', method: :get, local: true %>
 
 <h4><%= "#{@user.name}'s View Parties" %></h4>
 <% @user.user_events.each do |user_e| %>

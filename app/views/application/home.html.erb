@@ -1,5 +1,9 @@
-
-<%= button_to "Create a New User", "/register", method: :get %>
+<% if current_user %>
+  <%= link_to 'Log out', session_path(current_user.id), method: :delete %>
+  <% else %>
+<%= button_to "Create a New User", new_user_path, method: :get %>
+<%= link_to 'Log in', new_session_path, method: :get %>
+<% end %>
 
 <br><br>
 <h2>Existing Users: </h2>
@@ -8,5 +12,3 @@
   <%= link_to "#{user.email}", user_path(user.id) %>
   </div>
   <% end %>
-  
-<%= link_to 'Log in', '/login', method: :get %>

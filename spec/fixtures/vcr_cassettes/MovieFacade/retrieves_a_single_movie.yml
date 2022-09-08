@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 06 Sep 2022 20:05:52 GMT
+      - Wed, 07 Sep 2022 19:33:08 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,25 +42,25 @@ http_interactions:
       X-Memc-Key:
       - bf96989718684a7676c538b164bdeeb310082ded
       X-Memc-Age:
-      - '678'
+      - '1692'
       X-Memc-Expires:
-      - '16915'
+      - '14843'
       Etag:
-      - W/"f4bfd74e04ecbafa37f501db9efbdaed"
+      - W/"82c5e034ac625b6384843b0f4931cead"
       Vary:
       - Accept-Encoding
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 2e5e63ac90c6eb4f962029f46116f994.cloudfront.net (CloudFront)
+      - 1.1 452324c4cfd54555e3a2d8c074edaf78.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - ORD58-P1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - bOf9hWN7cbD782iIs0YhsdfXN0AYxDVgMqEMJpYnnK8Q7kxZuJXvmA==
+      - 8f-PtOZS450jERvImcCm3by1TIvd20k0Nrm74um1Rk6RK6tqSkiiOQ==
       Age:
-      - '9497'
+      - '22759'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/oD9PdTC1AUvsE2j2bUn8tusDVcO.jpg","belongs_to_collection":null,"budget":35000000,"genres":[{"id":35,"name":"Comedy"},{"id":18,"name":"Drama"},{"id":10749,"name":"Romance"}],"homepage":"http://somethingborrowedmovie.warnerbros.com/","id":49022,"imdb_id":"tt0491152","original_language":"en","original_title":"Something
@@ -69,11 +69,11 @@ http_interactions:
         celebration, Rachel unexpectedly falls into bed with her longtime crush, Dex
         -- who happens to be engaged to her best friend, Darcy. Ramifications of the
         liaison threaten to destroy the women''s lifelong friendship, while Ethan,
-        Rachel''s confidant, harbors a potentially explosive secret of his own.","popularity":21.469,"poster_path":"/y5wh6wanlF0mli2wEKtSJq6Q1sw.jpg","production_companies":[{"id":1088,"logo_path":"/9WOE5AQUXbOtLU6GTwfjS8OMF0v.png","name":"Alcon
+        Rachel''s confidant, harbors a potentially explosive secret of his own.","popularity":14.223,"poster_path":"/y5wh6wanlF0mli2wEKtSJq6Q1sw.jpg","production_companies":[{"id":1088,"logo_path":"/9WOE5AQUXbOtLU6GTwfjS8OMF0v.png","name":"Alcon
         Entertainment","origin_country":"US"},{"id":38010,"logo_path":null,"name":"Wild
         Ocean Films","origin_country":""},{"id":38011,"logo_path":null,"name":"2S
         Films","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"2011-05-05","revenue":65090821,"runtime":112,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"It''s
-        a thin line between love and friendship.","title":"Something Borrowed","video":false,"vote_average":6.272,"vote_count":901}'
-  recorded_at: Tue, 06 Sep 2022 22:44:08 GMT
+        a thin line between love and friendship.","title":"Something Borrowed","video":false,"vote_average":6.3,"vote_count":901}'
+  recorded_at: Thu, 08 Sep 2022 01:52:27 GMT
 recorded_with: VCR 6.1.0

@@ -6,7 +6,11 @@ RSpec.describe 'register page' do
   end
 
   it 'has a form to register a user' do
-    visit '/register'
+    user = User.create!(name: 'tee123', email: 'tee@tee.com', password: 'test123', password_confirmation: 'test123')
+
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+    visit new_user_path
 
     name = "Tee"
     email = "tee@test.com"
@@ -22,7 +26,11 @@ RSpec.describe 'register page' do
   end
 
   it 'sad path for non matching passwords' do
-    visit '/register'
+    user = User.create!(name: 'tee123', email: 'tee@tee.com', password: 'test123', password_confirmation: 'test123')
+
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+    visit new_user_path
 
     name = "Tee"
     email = "tee@test.com"
@@ -38,7 +46,7 @@ RSpec.describe 'register page' do
   end
 
   it 'sad path for existing email' do
-    visit '/register'
+    visit new_user_path
 
     name = "Tee"
     email = "jimb@viewingparty.com"
